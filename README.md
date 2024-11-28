@@ -17,7 +17,22 @@ Modules Overview:
       • RDS Module: Sets up a secure MySQL database instance.
       
  Ensuring Security for Terraform State:
+ 
      • Remote state stored securely in AWS S3 with versioning and encryption.
      • State locking using DynamoDB to prevent concurrent modifications.
      • Encrypted state files with AWS KMS.
      • Restricted access via IAM policies.
+
+  How to Deploy:
+  
+      1. Initialize the Terraform configuration:
+         terraform init
+         
+      2. Preview the infrastructure changes
+         terraform plan
+         
+      3. Apply the changes to create resources:
+         terraform apply
+         
+      4. Destroy the infrastructure if needed:
+         terraform destro
